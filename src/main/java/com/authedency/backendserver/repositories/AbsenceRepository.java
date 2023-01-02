@@ -10,5 +10,5 @@ public interface AbsenceRepository extends MongoRepository<Absence, String> {
 
     List<Absence> findByStudentId(String id);
     List<Absence> findBySessionId(String id);
-
+    List<Absence> findByStudentIdAndSessionId(String student_id, String session_id);
 }
